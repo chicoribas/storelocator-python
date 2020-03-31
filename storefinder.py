@@ -47,8 +47,6 @@ class StoreFinder:
 
             client_address = AddressApi.get_address_from_cep(cep)
 
-            print(client_address)
-
             search_hierarchy = [['state', 'city', 'neighborhood'],
                                 ['state', 'city'],
                                 ['state']]
