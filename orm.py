@@ -46,8 +46,8 @@ class Store(Base):
             "city": self.city,
             "state": self.state,
             "cep": self.cep,
-            "created_at": self.created_at,
-            "updated_at": self.updated_at,
+            "created_at": self.created_at.isoformat(),
+            "updated_at": self.updated_at.isoformat(),
         }
 
 class CacheRequests(Base):
@@ -84,8 +84,8 @@ class CacheRequests(Base):
             "client_state": self.client_state,
             "store_id": self.store_id,
             "distance": self.distance,
-            "created_at": self.created_at,
-            "updated_at": self.updated_at,
+            "created_at": self.created_at.isoformat(),
+            "updated_at": self.updated_at.isoformat(),
         }
 
 
