@@ -45,8 +45,15 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-#  environment:
-#    variable1: value1
+  environment:
+    OMNICHAT_USER: ${param:OMNICHAT_USER}
+    OMNICHAT_PSWD: ${param:OMNICHAT_PSWD}
+    OMNICHAT_HOST: ${param:OMNICHAT_HOST}
+    OMNICHAT_DB: ${param:OMNICHAT_DB}
+    OMNICHAT_CERT_PARAM: ${param:OMNICHAT_CERT_PARAM}
+    OMNICHAT_CERT: ${param:OMNICHAT_CERT}
+    OMNICHAT_DIALECT: ${param:OMNICHAT_DIALECT}
+    GMAPS_API_KEY: ${param:GMAPS_API_KEY}
 
 # you can add packaging information here
 #package:
